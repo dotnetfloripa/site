@@ -1,0 +1,57 @@
+﻿@using DotNetFloripa.Web.Extensions;
+@if (RenderContext.Context.IsPjaxRequest()) {
+    <title>@ViewBag.Title</title>
+    @RenderBody()
+    return;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="grupos de usuários .net de florianópolis">
+    <meta name="author" content="DotNetFloripa">
+    <meta name="keywords" content="dotnetfloripa,dotnet,floripa,florianopolis,silverlight,wpf,asp.net,asp.net mvc,windows phone,windows phone 7,xaml" />
+    <meta name="author" content="dotnetfloripa" />
+    <meta name="copyright" content="dotnetfloripa" />
+
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/nprogress.css" rel="stylesheet" />
+    <link href="~/Content/site.min.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="~/Scripts/html5shiv.js"></script>
+        <script src="~/Scripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li><a href="~/">Home</a></li>
+                <li><a href="~/sobre">Sobre</a></li>
+                <li><a href="~/eventos">Eventos</a></li>
+                <li><a href="~/vagas">Vagas</a></li>
+                <li><a href="~/empresas">Empresas</a></li>
+                <li><a href="~/contato">Contato</a></li>
+            </ul>
+            <h3 class="text-muted">
+                <img src="~/Content/images/logo.png" height="80" alt="logo" />
+            </h3>
+        </div>
+        <div id="pjax-container">
+            @RenderBody()
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-2.1.0.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.pjax.js"></script>
+    <script src="~/Scripts/nprogress.min.js"></script>
+    <script src="~/Scripts/js/init.js"></script>
+</body>
+</html>
