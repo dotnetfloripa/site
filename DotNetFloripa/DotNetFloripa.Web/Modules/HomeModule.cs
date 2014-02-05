@@ -25,7 +25,7 @@ namespace DotNetFloripa.Web.Modules
                     Description = "A Way2 desenvolve softwares e serviços para telemedição e gestão de dados de medição de energia. Sediada em Florianópolis, Santa Catarina, a empresa possui uma equipe multidisciplinar especializada no atendimento às demandas de empresas do setor elétrico, como geradoras, transmissoras, distribuidoras e comercializadoras.",
                     Site = "http://way2.com.br",
                     Address = "Rodovia SC 401, Km 04, Espaço Primavera Garden - Bloco B",
-                    Logo = "http://way2.com.br/wp-content/themes/way2/images/logo-way2.png"
+                    Logo = "http://i.imgur.com/gqaXyjL.png"
                 },
                 new Company {
                     Id = 2,
