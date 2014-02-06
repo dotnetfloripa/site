@@ -1,5 +1,6 @@
 ﻿@using DotNetFloripa.Web.Extensions;
-@if (RenderContext.Context.IsPjaxRequest()) {
+@if (RenderContext.Context.IsPjaxRequest())
+{
     <title>@ViewBag.Title</title>
     @RenderBody()
     return;
@@ -38,10 +39,11 @@
                 <li><a href="~/eventos">Eventos</a></li>
                 <li><a href="~/vagas">Vagas</a></li>
                 <li><a href="~/empresas">Empresas</a></li>
-                <li><a href="~/contato">Contato</a></li>
             </ul>
-            <h3 class="text-muted hidden-xs">
-                <img src="~/Content/images/logo-pequeno.png" height="80" alt="logo" class="img-responsive" />
+            <h3 class="text-muted">
+                <a href="~/">
+                    <img id="logo" src="~/Content/images/logo-pequeno.png" alt="logo" />
+                </a>
             </h3>
         </div>
         <div id="pjax-container">

@@ -1,9 +1,4 @@
-﻿body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  overflow-y: scroll;
-}
-* {
+﻿* {
   border-radius: 0 !important;
 }
 body,
@@ -22,7 +17,7 @@ h6,
 span,
 label,
 p {
-  font-family: 'Segoe UI Light';
+  font-family: 'Segoe UI Light', 'Segoe UI', Helvetica, Arial;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -34,10 +29,14 @@ label,
 p {
   font-size: 20px;
 }
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .header {
+  border-bottom: 1px solid #e5e5e5;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 1px solid #e5e5e5;
 }
 .header h3 {
   margin-top: 0;
@@ -45,8 +44,21 @@ p {
   line-height: 40px;
   padding-bottom: 19px;
 }
-.header .nav {
-  padding-top: 17px;
+#logo {
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 98%;
+  }
+}
+@media (min-width: 1024px) {
+  #logo {
+    height: 60px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
 }
 .jumbotron {
   text-align: center;
@@ -56,17 +68,12 @@ p {
   font-size: 21px;
   padding: 14px 24px;
 }
-@media (min-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
-}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .header {
+    margin-bottom: 30px;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 30px;
   }
   .jumbotron {
     border-bottom: 0;
