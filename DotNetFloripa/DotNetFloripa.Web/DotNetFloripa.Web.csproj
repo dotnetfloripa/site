@@ -65,6 +65,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\logo-medio.png" />
+    <Content Include="Content\images\logo-pequeno.png" />
     <Content Include="packages.config" />
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -87,7 +89,6 @@
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\FontAwesome.otf" />
-    <Content Include="Content\images\logo.png" />
     <Content Include="Content\nprogress.css" />
     <Content Include="Content\site.css">
       <DependentUpon>site.less</DependentUpon>
