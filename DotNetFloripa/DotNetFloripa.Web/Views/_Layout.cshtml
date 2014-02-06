@@ -33,6 +33,11 @@
 <body>
     <div class="container">
         <div class="header">
+            <div id="logo-mobile">
+                <a href="~/">
+                    <img src="~/Content/images/logo-pequeno.png" alt="logo" class="visible-xs" />
+                </a>
+            </div>
             <ul class="nav nav-pills pull-right">
                 <li><a href="~/">Home</a></li>
                 <li><a href="~/sobre">Sobre</a></li>
@@ -40,11 +45,12 @@
                 <li><a href="~/vagas">Vagas</a></li>
                 <li><a href="~/empresas">Empresas</a></li>
             </ul>
-            <h3 class="text-muted">
+            <div id="logo">
+                &nbsp;
                 <a href="~/">
-                    <img id="logo" src="~/Content/images/logo-pequeno.png" alt="logo" />
+                    <img src="~/Content/images/logo-pequeno.png" alt="logo" class="hidden-xs" />
                 </a>
-            </h3>
+            </div>
         </div>
         <div id="pjax-container">
             @RenderBody()
