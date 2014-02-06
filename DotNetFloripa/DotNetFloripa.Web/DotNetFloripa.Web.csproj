@@ -65,6 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\ie10mobile.css" />
     <Content Include="Content\images\logo-medio.png" />
     <Content Include="Content\images\logo-pequeno.png" />
     <Content Include="packages.config" />

@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
     <title>@ViewBag.Title</title>
-
+    <link href="~/Content/ie10mobile.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/nprogress.css" rel="stylesheet" />
@@ -48,6 +48,15 @@
             @RenderBody()
         </div>
     </div>
+    <script>
+        // Must be first. IE10 mobile viewport fix
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            var mq = "@-ms-viewport{width:auto!important}";
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    </script>
     <script src="~/Scripts/jquery-2.1.0.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
     <script src="~/Scripts/jquery.pjax.js"></script>

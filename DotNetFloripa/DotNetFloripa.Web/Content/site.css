@@ -1,21 +1,7 @@
-﻿@-webkit-viewport {
-  width: device-width;
-}
-@-moz-viewport {
-  width: device-width;
-}
-@-ms-viewport {
-  width: device-width;
-}
-@-o-viewport {
-  width: device-width;
-}
-@viewport {
-  width: device-width;
-}
-body {
+﻿body {
   padding-top: 20px;
   padding-bottom: 20px;
+  overflow-y: scroll;
 }
 * {
   border-radius: 0 !important;
@@ -95,3 +81,4 @@ img.img-centered {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+/*# sourceMappingURL=site.css.map */
