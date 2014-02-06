@@ -26,10 +26,10 @@ namespace DotNetFloripa.Web.Modules
                     Start = new DateTime(2014,3,19,19,00,0),
                     End = new DateTime(2014,3,19,21,30,0),
                     EventickId = 4846,
-                    EventickUrl = "http://www.eventick.com.br/dotnetfloripa-janeiro",
+                    EventickUrl = "http://www.eventick.com.br/dotnetfloripa-fevereiro",
                     ImageUrl = "http://i.imgur.com/2ls3CgF.png",
                     Organizers = new[]{"André Carlucci", "Renato Haddad", "Luís Deschamps Rudge"},
-                    Title = "dotnet Floripa - Janeiro",
+                    Title = "dotnet Floripa - Fevereiro",
                     Talks = new[]{ 
                         new Talk { 
                             Description = "NancyFX é um framework HTTP super leve que serve de alternativa para o ASP.NET MVC ou ASP.NET Web API",
