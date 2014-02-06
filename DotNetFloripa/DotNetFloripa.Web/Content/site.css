@@ -103,4 +103,17 @@ img.img-centered {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/*# sourceMappingURL=site.css.map */
+.list-group-item:hover {
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.list-group-item:hover p,
+.list-group-item:hover span,
+.list-group-item:hover h1,
+.list-group-item:hover h2,
+.list-group-item:hover h3,
+.list-group-item:hover h4,
+.list-group-item:hover h5 {
+  color: #fff;
+  font-weight: bold;
+}

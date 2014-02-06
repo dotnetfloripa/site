@@ -1,3 +1,52 @@
-﻿<div class="jumbotron">
-    Eventos
+﻿@using DotNetFloripa.Model;
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Event[]>
+<div class="row">
+    @foreach (var e in Model)
+    {
+        <div class="col-md-12">
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-3" style="height:150px;">
+                        <img src="@e.ImageUrl" alt="logo" class="img-responsive img-centered" />
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="pull-right">
+                            <strong>@e.Start.ToShortDateString()</strong> das <strong>@e.Start.ToShortTimeString()</strong> as <strong>@e.End.ToShortTimeString()</strong>
+                        </h4>
+                        <h2>
+                            <a href="@(String.IsNullOrEmpty(e.EventickUrl) ? "#" : e.EventickUrl)" target="_blank">@e.Title</a>
+                        </h2>
+                        <p>
+                            @e.Description
+                        </p>
+                        @if (!String.IsNullOrEmpty(e.EventickUrl))
+                        {
+                            <div>
+                                <a href="@e.EventickUrl" class="btn btn-success btn-lg btn-block"><strong>Inscreva-se!</strong></a>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="panel-body">
+                        <h1>Palestras</h1>
+                        <ul class="list-group">
+                            @foreach (var t in e.Talks)
+                            {
+                                <li class="list-group-item">
+                                    <h3>@t.Title</h3>
+                                    <p>@t.Description</p>
+                                    <hr />
+                                    <h4 class="text-right">
+                                        @Html.Raw(!String.IsNullOrEmpty(t.Speaker) ? "<strong>" + t.Speaker + "</strong> -" : "") <strong>@t.Start.ToShortTimeString()</strong> - <strong>@t.End.ToShortTimeString()</strong>
+                                    </h4>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
 </div>

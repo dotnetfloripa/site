@@ -34,6 +34,7 @@ body {
 .header {
     border-bottom: 1px solid #e5e5e5;
     padding-left: 0px;
+
     #logo {
         margin-top: 0;
         margin-bottom: 0;
@@ -61,9 +62,11 @@ body {
     .container {
         max-width: 98%;
     }
+
     .header {
-        padding-bottom:5px;
+        padding-bottom: 5px;
     }
+
     body,
     span,
     label,
@@ -76,8 +79,9 @@ body {
     #logo img {
         height: 60px;
     }
+
     .header {
-        padding-bottom:0;
+        padding-bottom: 0;
     }
 }
 
@@ -116,4 +120,16 @@ img.img-centered {
     -o-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.list-group-item {
+    &:hover {
+        p, span, h1, h2, h3, h4, h5 {
+            color: #fff;
+            font-weight:bold;
+        }
+
+        background-color: #428bca;
+        border-color: #428bca;
+    }
 }
