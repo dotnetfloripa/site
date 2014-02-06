@@ -23,8 +23,8 @@ namespace DotNetFloripa.Web.Modules
             var eventos = new[]{
                 new Event {
                     Description = "O grupo DotNetFloripa está voltando a ativa e já temos um novo evento marcado!",
-                    Start = new DateTime(2014,3,19,19,00,0),
-                    End = new DateTime(2014,3,19,21,30,0),
+                    Start = new DateTime(2014,2,19,19,00,0),
+                    End = new DateTime(2014,2,19,21,30,0),
                     EventickId = 4846,
                     EventickUrl = "http://www.eventick.com.br/dotnetfloripa-fevereiro",
                     ImageUrl = "http://i.imgur.com/2ls3CgF.png",
@@ -33,19 +33,19 @@ namespace DotNetFloripa.Web.Modules
                     Talks = new[]{ 
                         new Talk { 
                             Description = "NancyFX é um framework HTTP super leve que serve de alternativa para o ASP.NET MVC ou ASP.NET Web API",
-                            Start = new DateTime(2014,3,19,19,30,0),
-                            End = new DateTime(2014,3,19,20,15,0),
+                            Start = new DateTime(2014,2,19,19,30,0),
+                            End = new DateTime(2014,2,19,20,15,0),
                             Speaker = "Luís Deschamps Rudge",
                             Title = "Conheça o NancyFX!"
                         },new Talk { 
-                            Start = new DateTime(2014,3,19,20,15,0),
-                            End = new DateTime(2014,3,19,20,30,0),
+                            Start = new DateTime(2014,2,19,20,15,0),
+                            End = new DateTime(2014,2,19,20,30,0),
                             Title = "coffee-break",
                             Description = "Sim! Agora temos coffee-break com deliciosos salgadinhos!"
                         },new Talk { 
                             Description = "NancyFX é um framework HTTP super leve que serve de alternativa para o ASP.NET MVC ou ASP.NET Web API",
-                            Start = new DateTime(2014,3,19,19,30,0),
-                            End = new DateTime(2014,3,19,20,15,0),
+                            Start = new DateTime(2014,2,19,19,30,0),
+                            End = new DateTime(2014,2,19,20,15,0),
                             Speaker = "Luís Deschamps Rudge",
                             Title = "Conheça o NancyFX!"
                         }
