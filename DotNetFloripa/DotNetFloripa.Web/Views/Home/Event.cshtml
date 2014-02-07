@@ -1,0 +1,59 @@
+﻿@using DotNetFloripa.Model;
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Event>
+@{
+    var e = Model;
+}
+@section facebook{
+    <meta property="og:title" content="@e.Title" />
+    <meta property="og:description" content="@e.Description" />
+    <meta property="og:image" content="@e.ImageUrl" />
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="well">
+            <div class="row">
+                <div class="col-md-3" style="height:150px;">
+                    <img src="@e.ImageUrl" alt="logo" class="img-responsive img-centered" />
+                </div>
+                <div class="col-md-9">
+                    <h4 class="pull-right hidden-xs">
+                        <strong>@e.Start.ToShortDateString()</strong> das <strong>@e.Start.ToShortTimeString()</strong> as <strong>@e.End.ToShortTimeString()</strong>
+                    </h4>
+                    <h2>
+                        <a href="@(String.IsNullOrEmpty(e.EventickUrl) ? "#" : e.EventickUrl)" target="_blank">@e.Title</a>
+                    </h2>
+                    <p class="visible-xs">
+                        <strong>@e.Start.ToShortDateString()</strong> das <strong>@e.Start.ToShortTimeString()</strong> as <strong>@e.End.ToShortTimeString()</strong>
+                    </p>
+                    <p>
+                        @e.Description
+                    </p>
+                    @if (!String.IsNullOrEmpty(e.EventickUrl))
+                    {
+                        <div>
+                            <a href="@e.EventickUrl" class="btn btn-success btn-lg btn-large"><strong>Inscreva-se!</strong></a>
+                        </div>
+                    }
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="panel-body">
+                    <h1>Palestras</h1>
+                    <ul class="list-group">
+                        @foreach (var t in e.Talks)
+                        {
+                            <li class="list-group-item">
+                                <h4 class="pull-right">
+                                    @Html.Raw(!String.IsNullOrEmpty(t.Speaker) ? "<strong>" + t.Speaker + "</strong> -" : "") <strong>@t.Start.ToShortTimeString()</strong> - <strong>@t.End.ToShortTimeString()</strong>
+                                </h4>
+                                <h3>@t.Title</h3>
+                                <p>@t.Description</p>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

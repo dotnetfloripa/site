@@ -1,5 +1,10 @@
 ﻿@using DotNetFloripa.Model;
 @inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Event[]>
+@section facebook{
+    <meta property="og:title" content="Eventos de .NET em Floripa" />
+    <meta property="og:description" content="Eventos de .NET em florianópolis" />
+    <meta property="og:image" content="~/Content/images/logo-pequeno.png" />
+}
 <div class="row">
     @foreach (var e in Model)
     {
@@ -14,7 +19,7 @@
                             <strong>@e.Start.ToShortDateString()</strong> das <strong>@e.Start.ToShortTimeString()</strong> as <strong>@e.End.ToShortTimeString()</strong>
                         </h4>
                         <h2>
-                            <a href="@(String.IsNullOrEmpty(e.EventickUrl) ? "#" : e.EventickUrl)" target="_blank">@e.Title</a>
+                            <a href="~/evento/@e.Slug">@e.Title</a>
                         </h2>
                         <p>
                             @e.Description
@@ -25,25 +30,6 @@
                                 <a href="@e.EventickUrl" class="btn btn-success btn-lg btn-block"><strong>Inscreva-se!</strong></a>
                             </div>
                         }
-                    </div>
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="panel-body">
-                        <h1>Palestras</h1>
-                        <ul class="list-group">
-                            @foreach (var t in e.Talks)
-                            {
-                                <li class="list-group-item">
-                                    <h3>@t.Title</h3>
-                                    <p>@t.Description</p>
-                                    <hr />
-                                    <h4 class="text-right">
-                                        @Html.Raw(!String.IsNullOrEmpty(t.Speaker) ? "<strong>" + t.Speaker + "</strong> -" : "") <strong>@t.Start.ToShortTimeString()</strong> - <strong>@t.End.ToShortTimeString()</strong>
-                                    </h4>
-                                </li>
-                            }
-                        </ul>
                     </div>
                 </div>
             </div>

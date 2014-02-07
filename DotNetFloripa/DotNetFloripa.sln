@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFloripa.Web", "DotNet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFloripa.Model", "DotNetFloripa.Model\DotNetFloripa.Model.csproj", "{99986832-EE5F-49A8-886A-C6B88DDF5E46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFloripa.Data", "DotNetFloripa.Data\DotNetFloripa.Data.csproj", "{35BB22E6-8514-48C8-91DA-11FF446B6CE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{99986832-EE5F-49A8-886A-C6B88DDF5E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99986832-EE5F-49A8-886A-C6B88DDF5E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99986832-EE5F-49A8-886A-C6B88DDF5E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35BB22E6-8514-48C8-91DA-11FF446B6CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35BB22E6-8514-48C8-91DA-11FF446B6CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35BB22E6-8514-48C8-91DA-11FF446B6CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35BB22E6-8514-48C8-91DA-11FF446B6CE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

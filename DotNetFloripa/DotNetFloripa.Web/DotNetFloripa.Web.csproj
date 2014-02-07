@@ -72,6 +72,7 @@
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Event.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -127,9 +128,14 @@
     <Compile Include="Extensions\NancyExtensions.cs" />
     <Compile Include="Modules\HomeModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DotNetFloripa.Data\DotNetFloripa.Data.csproj">
+      <Project>{35bb22e6-8514-48c8-91da-11ff446b6ce8}</Project>
+      <Name>DotNetFloripa.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DotNetFloripa.Model\DotNetFloripa.Model.csproj">
       <Project>{99986832-ee5f-49a8-886a-c6b88ddf5e46}</Project>
       <Name>DotNetFloripa.Model</Name>

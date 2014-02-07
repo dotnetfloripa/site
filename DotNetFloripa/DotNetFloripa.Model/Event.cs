@@ -3,6 +3,7 @@ namespace DotNetFloripa.Model
 {
     public class Event : Entity
     {
+        public string Slug { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime Start { get; set; }

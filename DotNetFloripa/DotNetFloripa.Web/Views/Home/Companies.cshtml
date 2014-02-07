@@ -1,5 +1,10 @@
 ﻿@using DotNetFloripa.Model;
 @inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Company[]>
+@section facebook{
+    <meta property="og:title" content="Empresas de .NET em Floripa" />
+    <meta property="og:description" content="Empresas de .NET em Floripa" />
+    <meta property="og:image" content="~/Content/images/logo-pequeno.png" />
+}
 <div class="row">
     @foreach (var c in Model)
     {
