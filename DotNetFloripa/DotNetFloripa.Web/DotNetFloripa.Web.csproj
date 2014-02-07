@@ -69,6 +69,7 @@
     <Content Include="Content\images\logo-medio.png" />
     <Content Include="Content\images\logo-pequeno.png" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\js\analytics.js" />
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />

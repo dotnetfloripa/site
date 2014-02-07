@@ -14,13 +14,19 @@ namespace DotNetFloripa.Web.Modules
         {
             _repository = repository;
 
-            Get["/"] = _ => View["Index"];
+            Get["/"] = _ => GetIndex();
             Get["/sobre"] = _ => View["About"];
             Get["/eventos"] = _ => GetEvents();
             Get["/evento/{slug}"] = _ => GetEvent((string)_.slug);
             Get["/vagas"] = _ => View["Jobs"];
             Get["/empresas"] = _ => GetCompanies();
             Get["/contato"] = _ => View["Contact"];
+        }
+
+        private dynamic GetIndex()
+        {
+            var proximoEvento = _repository.GetEvents().Where(e => e.Start > DateTime.UtcNow).FirstOrDefault();
+            return View["Index", proximoEvento];
         }
 
         private dynamic GetEvent(string slug)

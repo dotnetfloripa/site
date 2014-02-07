@@ -19,6 +19,8 @@
         .on('pjax:complete', function () {
             NProgress.done();
             setActiveMenu();
+            ga('set', 'location', window.location.href);
+            ga('send', 'pageview');
         })
         .on('pjax:timeout', function (event) {
             event.preventDefault();

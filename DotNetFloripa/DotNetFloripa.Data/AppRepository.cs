@@ -25,7 +25,7 @@ namespace DotNetFloripa.Data
                     Title = "dotnet Floripa - Fevereiro",
                     Talks = new[]{ 
                         new Talk { 
-                            Description = "NancyFX é um framework HTTP super leve que serve de alternativa para o ASP.NET MVC ou ASP.NET Web API",
+                            Description = "NancyFX é um framework HTTP super leve que serve de alternativa para o ASP.NET MVC ou ASP.NET Web API. Por que precisamos de uma alternativa? Quais os benefícios que isso traz e como introduzir o NancyFX em um app já existente? Venha conferir!",
                             Start = new DateTime(2014,2,19,19,30,0),
                             End = new DateTime(2014,2,19,20,15,0),
                             Speaker = "Luís Deschamps Rudge",
