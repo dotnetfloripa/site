@@ -116,4 +116,12 @@ img.img-centered {
 .list-group-item:hover h5 {
   color: #fff;
 }
+.speaker {
+  margin-top: -0.6em;
+  color: #898989;
+  font-style: italic;
+}
+.event-title {
+  margin-top: 5px;
+}
 /*# sourceMappingURL=site.css.map */

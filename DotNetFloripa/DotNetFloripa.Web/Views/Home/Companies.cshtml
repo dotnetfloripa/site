@@ -1,8 +1,11 @@
 ﻿@using DotNetFloripa.Model;
 @inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Company[]>
+@section seo {
+    <meta name="description" content="Empresas que trabalham com .NET em Florianópolis">
+}
 @section facebook{
     <meta property="og:title" content="Empresas de .NET em Floripa" />
-    <meta property="og:description" content="Empresas de .NET em Floripa" />
+    <meta property="og:description" content="Empresas que trabalham com .NET em Florianópolis" />
     <meta property="og:image" content="~/Content/images/logo-pequeno.png" />
 }
 <div class="row">

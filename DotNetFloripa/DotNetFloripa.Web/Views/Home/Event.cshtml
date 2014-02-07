@@ -3,6 +3,9 @@
 @{
     var e = Model;
 }
+@section seo {
+    <meta name="description" content="Eventos de .NET em Floripa - @e.Description">
+}
 @section facebook{
     <meta property="og:title" content="@e.Title" />
     <meta property="og:description" content="@e.Description" />
@@ -17,13 +20,13 @@
                 </div>
                 <div class="col-md-9">
                     <h4 class="pull-right hidden-xs">
-                        <strong>@e.Start.ToShortDateString()</strong> das <strong>@e.Start.ToShortTimeString()</strong> as <strong>@e.End.ToShortTimeString()</strong>
+                        <strong>@e.Start.ToShortDateString()</strong> - <strong>@e.Start.ToShortTimeString()</strong> - <strong>@e.End.ToShortTimeString()</strong>
                     </h4>
                     <h2>
                         <a href="@(String.IsNullOrEmpty(e.EventickUrl) ? "#" : e.EventickUrl)" target="_blank">@e.Title</a>
                     </h2>
                     <p class="visible-xs">
-                        <strong>@e.Start.ToShortDateString()</strong> das <strong>@e.Start.ToShortTimeString()</strong> as <strong>@e.End.ToShortTimeString()</strong>
+                        <strong>@e.Start.ToShortDateString()</strong> - <strong>@e.Start.ToShortTimeString()</strong> - <strong>@e.End.ToShortTimeString()</strong>
                     </p>
                     <p>
                         @e.Description
@@ -45,9 +48,15 @@
                         {
                             <li class="list-group-item">
                                 <h4 class="pull-right">
-                                    @Html.Raw(!String.IsNullOrEmpty(t.Speaker) ? "<strong>" + t.Speaker + "</strong> -" : "") <strong>@t.Start.ToShortTimeString()</strong> - <strong>@t.End.ToShortTimeString()</strong>
+                                    <strong>@t.Start.ToShortTimeString()</strong> - <strong>@t.End.ToShortTimeString()</strong>
                                 </h4>
-                                <h3>@t.Title</h3>
+                                <h3 class="event-title">@t.Title</h3>
+                                @if (!String.IsNullOrEmpty(t.Speaker))
+                                {
+                                    <p class="speaker">
+                                        <small>@t.Speaker</small>
+                                    </p>
+                                }
                                 <p>@t.Description</p>
                             </li>
                         }

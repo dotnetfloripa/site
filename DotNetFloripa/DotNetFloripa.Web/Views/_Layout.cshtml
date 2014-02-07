@@ -11,9 +11,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="grupos de usuários .net de florianópolis">
-    <meta name="author" content="DotNetFloripa">
-    <meta name="keywords" content="dotnetfloripa,dotnet,floripa,florianopolis,silverlight,wpf,asp.net,asp.net mvc,windows phone,windows phone 7,xaml" />
+    @if (!IsSectionDefined("seo"))
+    {
+        <meta name="description" content="Grupo de usuários .net de florianópolis">
+    }
+    else
+    {
+        @RenderSection("seo")
+    }
+    <meta name="keywords" content="dotnetfloripa,dotnet,.net,palestra,evento,c#,csharp,floripa,florianopolis,silverlight,wpf,asp.net,asp.net mvc,windows phone,windows phone 7,xaml" />
     <meta name="author" content="dotnetfloripa" />
     <meta name="copyright" content="dotnetfloripa" />
     @RenderSection("facebook", required: false)

@@ -37,8 +37,8 @@ namespace DotNetFloripa.Data
                             Description = "Sim! Agora temos coffee-break com deliciosos salgadinhos!"
                         },new Talk { 
                             Description = "A definir",
-                            Start = new DateTime(2014,2,19,19,30,0),
-                            End = new DateTime(2014,2,19,20,15,0),
+                            Start = new DateTime(2014,2,19,20,30,0),
+                            End = new DateTime(2014,2,19,21,30,0),
                             Speaker = "André Carlucci",
                             Title = "A definir"
                         }
