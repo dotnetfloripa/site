@@ -20,7 +20,6 @@ namespace DotNetFloripa.Web.Modules
             Get["/evento/{slug}"] = _ => GetEvent((string)_.slug);
             Get["/vagas"] = _ => View["Jobs"];
             Get["/empresas"] = _ => GetCompanies();
-            Get["/contato"] = _ => View["Contact"];
         }
 
         private dynamic GetIndex()

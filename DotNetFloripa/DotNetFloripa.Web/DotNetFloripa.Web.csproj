@@ -121,7 +121,6 @@
     <Content Include="Scripts\jquery-2.1.0.min.map" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Jobs.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Companies.cshtml" />
     <Content Include="Views\Home\Events.cshtml" />
   </ItemGroup>
