@@ -36,11 +36,11 @@ namespace DotNetFloripa.Data
                             Title = "coffee-break",
                             Description = "Sim! Agora temos coffee-break com deliciosos salgadinhos!"
                         },new Talk { 
-                            Description = "A definir",
+                            Description = "Todos nós amamos o Nuget. É até difícil lembrar o quanto era cruel gerenciar nossas dependências de projetos manualmente. Nesta palestra damos um passo a mais: vamos aprender como criar nossos próprios pacotes, integrá-los com builds automatizados e descobrir como sua empresa pode tirar o máximo desta tecnologia.",
                             Start = new DateTime(2014,2,19,20,30,0),
                             End = new DateTime(2014,2,19,21,30,0),
                             Speaker = "André Carlucci",
-                            Title = "A definir"
+                            Title = "Aproveite ao máximo o Nuget"
                         }
                     }
                 }
