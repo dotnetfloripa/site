@@ -52,7 +52,7 @@ namespace DotNetFloripa.Data
                     Description = "A Way2 desenvolve softwares e serviços para telemedição e gestão de dados de medição de energia. Sediada em Florianópolis, Santa Catarina, a empresa possui uma equipe multidisciplinar especializada no atendimento às demandas de empresas do setor elétrico, como geradoras, transmissoras, distribuidoras e comercializadoras.",
                     Site = "http://way2.com.br",
                     Address = "Rodovia SC 401, Km 04, Espaço Primavera Garden - Bloco B",
-                    LogoUrl = "http://i.imgur.com/gqaXyjL.png"
+                    LogoUrl = "http://i.imgur.com/Slsbsu1.png"
                 },
                 new Company {
                     Name = "Bravi Software",
