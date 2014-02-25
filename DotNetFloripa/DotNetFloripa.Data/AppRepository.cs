@@ -14,6 +14,7 @@ namespace DotNetFloripa.Data
         {
             Events = new[]{
                 new Event {
+                    Id = 1,
                     Slug = "dotnetfloripa-fevereiro",
                     Description = "O grupo DotNetFloripa está voltando a ativa e já temos um novo evento marcado!",
                     Start = new DateTime(2014,2,19,19,00,0),
@@ -45,6 +46,7 @@ namespace DotNetFloripa.Data
                     }
                 },
                 new Event {
+                    Id = 2,
                     Slug = "dotnetfloripa-marco",
                     Description = "Mais um evento do DotNetFloripa!",
                     Start = new DateTime(2014,3,19,19,00,0),
@@ -67,10 +69,10 @@ namespace DotNetFloripa.Data
                             Title = "coffee-break",
                             Description = "Sim! Agora temos coffee-break com deliciosos salgadinhos!"
                         },new Talk { 
-                            Description = "Aprenda como mapear stored procedures de Insert, Delete e Update baseado diretamente na classe. Veja ainda como renomear uma SP, como inserir log no código para rastrear as execuções num projeto ASP.NET MVC 5 com chamadas assíncronas. Nesta palestra, para completar o entendimento Renato abordará o uso do Migrations e Code First, ou seja, crie as classes no projeto e deixe que o Visual Studio cria o banco de dados em tempo de execução.",
+                            Description = "Aprenda como mapear stored procedures de Insert, Delete e Update baseado diretamente na classe. Veja ainda como renomear uma SP, como inserir log no código para rastrear as execuções num projeto ASP.NET MVC 5 com chamadas assíncronas. Nesta palestra, para completar o entendimento, Renato abordará o uso de Migrations e Code First, ou seja, crie as classes no projeto e deixe que o Visual Studio crie o banco de dados em tempo de execução.",
                             Start = new DateTime(2014,3,19,20,30,0),
                             End = new DateTime(2014,3,19,21,30,0),
-                            Speaker = "Renato Haddad, Microsoft Most Valuable Professional (MVP)",
+                            Speaker = "Renato Haddad - Microsoft Most Valuable Professional (MVP)",
                             Title = "Como mapear Stored Procedures no Entity Framework 6?"
                         }
                     }
