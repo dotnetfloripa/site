@@ -58,7 +58,7 @@ namespace DotNetFloripa.Data
                     Title = "dotnet Floripa - Março",
                     Talks = new[]{ 
                         new Talk { 
-                            Description = "O TypeScript é uma extensão da linguagem JavaScript que adiciona 'tipagem' e mais uma série de facilidades ao programador e que é "compilada" para JavaScript puro, portanto compatível com qualquer código JavaScript existente (por exemplo, jQuery). Nessa palestra você irá aprender por que vale a pena aprender e usar TypeScript, e como utilizá-la da melhor forma possível.",
+                            Description = "O TypeScript é uma extensão da linguagem JavaScript que adiciona 'tipagem' e mais uma série de facilidades ao programador e que é \"compilada\" para JavaScript puro, portanto compatível com qualquer código JavaScript existente (por exemplo, jQuery). Nessa palestra você irá aprender por que vale a pena aprender e usar TypeScript, e como utilizá-la da melhor forma possível.",
                             Start = new DateTime(2014,3,19,19,30,0),
                             End = new DateTime(2014,3,19,20,15,0),
                             Speaker = "Bruno Michels",
