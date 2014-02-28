@@ -48,7 +48,7 @@ namespace DotNetFloripa.Data
                 new Event {
                     Id = 2,
                     Slug = "dotnetfloripa-marco",
-                    Description = "Mais um evento do DotNetFloripa!",
+                    Description = "Mais um evento do DotNetFloripa! Venha conhecer mais sobre Typescript e Entity Framework 6!",
                     Start = new DateTime(2014,3,19,19,00,0),
                     End = new DateTime(2014,3,19,21,30,0),
                     EventickId = 5103,
