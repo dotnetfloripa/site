@@ -47,33 +47,70 @@ namespace DotNetFloripa.Data
                 },
                 new Event {
                     Id = 2,
-                    Slug = "dotnetfloripa-marco",
-                    Description = "Mais um evento do DotNetFloripa! Venha conhecer mais sobre Typescript e Entity Framework 6!",
-                    Start = new DateTime(2014,3,19,19,00,0),
-                    End = new DateTime(2014,3,19,21,30,0),
-                    EventickId = 5103,
-                    EventickUrl = "http://www.eventick.com.br/dotnetfloripa-marco",
-                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
-                    Organizers = new[]{"André Carlucci", "Renato Haddad", "Luís Deschamps Rudge"},
-                    Title = "dotnet Floripa - Março",
+                    Slug = "gwab-floripa",
+                    Description = "Bootcamp de Windows Azure! Mais informações no <a href='http://gwab2014-floripa.azurewebsites.net/'>site oficial</a>! ",
+                    Start = new DateTime(2014,3,29,8,0,0),
+                    End = new DateTime(2014,3,29,17,0,0),
+                    EventickId = 0,
+                    EventickUrl = "http://www.eventick.com.br/GWAB2014-Florianopolis-SC",
+                    ImageUrl = "http://i.imgur.com/yW4p5Yy.jpg",
+                    Organizers = new[]{"André Carlucci", "Luís Deschamps Rudge"},
+                    Title = "Global Windows Azure Bootcamp - Floripa",
                     Talks = new[]{ 
                         new Talk { 
-                            Description = "O TypeScript é uma extensão da linguagem JavaScript que adiciona 'tipagem' e mais uma série de facilidades ao programador e que é \"compilada\" para JavaScript puro, portanto compatível com qualquer código JavaScript existente (por exemplo, jQuery). Nessa palestra você irá aprender por que vale a pena aprender e usar TypeScript, e como utilizá-la da melhor forma possível.",
-                            Start = new DateTime(2014,3,19,19,30,0),
-                            End = new DateTime(2014,3,19,20,15,0),
-                            Speaker = "Bruno Michels",
-                            Title = "Introdução ao TypeScript"
+                            Description = "Boas vindas",
+                            Start = new DateTime(2014,3,29,8,0,0),
+                            End = new DateTime(2014,3,29,8,30,0),
+                            Speaker = "-",
+                            Title = "Welcome"
                         },new Talk { 
-                            Start = new DateTime(2014,3,19,20,15,0),
-                            End = new DateTime(2014,3,19,20,30,0),
-                            Title = "coffee-break",
-                            Description = "Sim! Agora temos coffee-break com deliciosos salgadinhos!"
+                            Description = "Keynote sobre o evento",
+                            Start = new DateTime(2014,3,29,8,30,0),
+                            End = new DateTime(2014,3,29,9,0,0),
+                            Speaker = "-",
+                            Title = "Keynote Microsoft"
                         },new Talk { 
-                            Description = "Aprenda como mapear stored procedures de Insert, Delete e Update baseado diretamente na classe. Veja ainda como renomear uma SP, como inserir log no código para rastrear as execuções num projeto ASP.NET MVC 5 com chamadas assíncronas. Nesta palestra, para completar o entendimento, Renato abordará o uso de Migrations e Code First, ou seja, crie as classes no projeto e deixe que o Visual Studio crie o banco de dados em tempo de execução.",
-                            Start = new DateTime(2014,3,19,20,30,0),
-                            End = new DateTime(2014,3,19,21,30,0),
-                            Speaker = "Renato Haddad - Microsoft Most Valuable Professional (MVP)",
-                            Title = "Como mapear Stored Procedures no Entity Framework 6?"
+                            Description = "Overview sobre Windows Azure",
+                            Start = new DateTime(2014,3,29,9,0,0),
+                            End = new DateTime(2014,3,29,9,45,0),
+                            Speaker = "Luís Deschamps Rudge",
+                            Title = "Overview Windows Azure"
+                        },new Talk { 
+                            Description = "LAB",
+                            Start = new DateTime(2014,3,29,9,45,0),
+                            End = new DateTime(2014,3,29,11,0,0),
+                            Speaker = "-",
+                            Title = "Lab: Luta contra diabetes"
+                        },new Talk { 
+                            Description = "Entenda o que é Azure Mobile Services e como utilizá-lo com sucesso no seu app!",
+                            Start = new DateTime(2014,3,29,11,0,0),
+                            End = new DateTime(2014,3,29,11,30,0),
+                            Speaker = "André Carlucci",
+                            Title = "Windows Azure Mobile Services"
+                        },new Talk { 
+                            Description = "Confira como utilizar o Azure como uma extensão da sua empresa!",
+                            Start = new DateTime(2014,3,29,11,30,0),
+                            End = new DateTime(2014,3,29,12,0,0),
+                            Speaker = "Luís Deschamps Rudge",
+                            Title = "Máquinas virtuais e VPN"
+                        },new Talk { 
+                            Description = "Almoço grátis no local",
+                            Start = new DateTime(2014,3,29,12,0,0),
+                            End = new DateTime(2014,3,29,13,0,0),
+                            Speaker = "-",
+                            Title = "Almoço"
+                        },new Talk { 
+                            Description = "LAB",
+                            Start = new DateTime(2014,3,29,13,0,0),
+                            End = new DateTime(2014,3,29,16,45,0),
+                            Speaker = "-",
+                            Title = "Labs (Virtual Machines, VPN, Mobile Services, WebSites)"
+                        },new Talk { 
+                            Description = "Encerramento",
+                            Start = new DateTime(2014,3,29,16,45,0),
+                            End = new DateTime(2014,3,29,17,0,0),
+                            Speaker = "-",
+                            Title = "Encerramento"
                         }
                     }
                 }

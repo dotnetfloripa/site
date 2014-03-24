@@ -30,7 +30,7 @@
                         <strong>@e.Start.ToShortDateString()</strong> - <strong>@e.Start.ToShortTimeString()</strong> - <strong>@e.End.ToShortTimeString()</strong>
                     </p>
                     <p>
-                        @e.Description
+                        @Html.Raw(e.Description)
                     </p>
                     @if (!String.IsNullOrEmpty(e.EventickUrl))
                     {
