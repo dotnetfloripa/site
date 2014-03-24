@@ -1,11 +1,10 @@
 ﻿@using System
-@using System.Text.RegularExpressions
 @using DotNetFloripa.Model;
 @inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Event>
 @{
     var e = Model;
     ViewBag.Title = "dotnet Floripa - " + e.Title;
-    var safeDescription = Regex.Replace(e.Description, @"<[^>]+>|&nbsp;", "").Trim();
+    var safeDescription = ViewBag.SafeDescription;
 }
 @section seo {
     <meta name="description" content="Eventos de .NET em Floripa - @safeDescription">

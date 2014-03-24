@@ -35,6 +35,7 @@ namespace DotNetFloripa.Web.Modules
             {
                 return HttpStatusCode.NotFound;
             }
+            ViewBag.SafeDescription = System.Text.RegularExpressions.Regex.Replace(@event.Description, @"<[^>]+>|&nbsp;", "").Trim();
             return View["Event", @event];
         }
 
