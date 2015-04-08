@@ -24,7 +24,10 @@ namespace DotNetFloripa.Web.Modules
 
         private dynamic GetIndex()
         {
-            var proximoEvento = _repository.GetEvents().OrderByDescending(e => e.Id).FirstOrDefault();
+            var proximoEvento = _repository.GetEvents().Where(e => e.Start >= DateTime.Now).OrderByDescending(e => e.Id).FirstOrDefault();
+            if (proximoEvento == null) {
+                proximoEvento = new Event();
+            }
             return View["Index", proximoEvento];
         }
 
