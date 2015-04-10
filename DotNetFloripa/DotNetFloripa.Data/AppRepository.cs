@@ -113,7 +113,39 @@ namespace DotNetFloripa.Data
                             Title = "Encerramento"
                         }
                     }
-                }
+                },
+                new Event {
+                    Id = 1,
+                    Slug = "dotnetfloripa-2015-04",
+                    Description = "IoT com Netduíno e reconhecimento de gestos com RealSense",
+                    Start = new DateTime(2015,4,23,19,15,0),
+                    End = new DateTime(2014,4,23,21,15,0),
+                    EventickId = 4846,
+                    EventickUrl = "http://even.tc/dotnetfloripa-2015-04",
+                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
+                    Organizers = new[]{"André Carlucci", "Renato Haddad", "Luís Deschamps Rudge"},
+                    Title = "dotnet Floripa - Abril de 2015",
+                    Talks = new[]{ 
+                        new Talk { 
+                            Description = "Você já deve ter ouvido falar disso. Internet das Coisas (IoT Internet of things), tudo o que é dispositivo pessoal ou equipamento com um endereço IP, sendo monitorado, gerenciado e telemetrado. Mas que tal começar a colocar a mão na massa e entender como interagir com os dispositivos por exemplo Chaves de contato liga e desliga, medidores de potência, leds, tudo isso usando MicroFrameWork + Arduino = NetDuino em C#!!! Assista esta palestra e saia com o lado esquerdo do cérebro pipocando de ideias.",
+                            Start = new DateTime(2015,4,23,19,15,0),
+                            End = new DateTime(2015,4,23,20,00,0),
+                            Speaker = "Claudenir C. Andrade",
+                            Title = "IOT Internet das Coisas Visual Studio e Windows embedded"
+                        },new Talk { 
+                            Start = new DateTime(2015,4,23,20,0,0),
+                            End = new DateTime(2015,4,23,20,15,0),
+                            Title = "coffee-break",
+                            Description = "Coffee-break e networking"
+                        },new Talk { 
+                            Description = "Venha aprender como utilizar gestos, fala e expressões faciais para interagir com suas aplicações adicionando a elas um controle natural e intuitivo com Intel RealSense SDK",
+                            Start = new DateTime(2015,4,23,20,30,0),
+                            End = new DateTime(2015,4,23,21,15,0),
+                            Speaker = "André Carlucci e Renato Haddad",
+                            Title = "Interaja naturalmente com suas aplicações utilizando o Intel RealSense SDK"
+                        }
+                    }
+                },
             };
 
             Companies = new[] {
@@ -123,13 +155,6 @@ namespace DotNetFloripa.Data
                     Site = "http://way2.com.br",
                     Address = "Rodovia SC 401, Km 04, Espaço Primavera Garden - Bloco B",
                     LogoUrl = "http://i.imgur.com/Slsbsu1.png"
-                },
-                new Company {
-                    Name = "Bravi Software",
-                    Description = "A Bravi Software é uma empresa que desenvolve soluções e tecnologia para o mercado da educação.",
-                    Site = "http://bravisoftware.com/",
-                    Address = "Rodovia SC 401, n° 8600 - Sala 4, bloco 08",
-                    LogoUrl = "http://bravisoftware.com/img/bg-logo.png"
                 }
             };
         }
