@@ -24,7 +24,7 @@ namespace DotNetFloripa.Web.Modules
 
         private dynamic GetIndex()
         {
-            var proximoEvento = _repository.GetEvents().Where(e => e.Start >= DateTime.Now).OrderByDescending(e => e.Id).FirstOrDefault();
+            var proximoEvento = _repository.GetEvents().Where(e => e.Start.Date >= DateTime.Now.Date).OrderByDescending(e => e.Id).FirstOrDefault();
             if (proximoEvento == null) {
                 proximoEvento = new Event();
             }
