@@ -115,7 +115,7 @@ namespace DotNetFloripa.Data
                     }
                 },
                 new Event {
-                    Id = 1,
+                    Id = 3,
                     Slug = "dotnetfloripa-2015-04",
                     Description = "IoT com Netduíno e reconhecimento de gestos com RealSense",
                     Start = new DateTime(2015,4,23,19,15,0),
@@ -125,19 +125,19 @@ namespace DotNetFloripa.Data
                     ImageUrl = "http://i.imgur.com/2ls3CgF.png",
                     Organizers = new[]{"André Carlucci", "Renato Haddad", "Luís Deschamps Rudge"},
                     Title = "dotnet Floripa - Abril de 2015",
-                    Talks = new[]{ 
-                        new Talk { 
+                    Talks = new[]{
+                        new Talk {
                             Description = "Você já deve ter ouvido falar disso. Internet das Coisas (IoT Internet of things), tudo o que é dispositivo pessoal ou equipamento com um endereço IP, sendo monitorado, gerenciado e telemetrado. Mas que tal começar a colocar a mão na massa e entender como interagir com os dispositivos por exemplo Chaves de contato liga e desliga, medidores de potência, leds, tudo isso usando MicroFrameWork + Arduino = NetDuino em C#!!! Assista esta palestra e saia com o lado esquerdo do cérebro pipocando de ideias.",
                             Start = new DateTime(2015,4,23,19,15,0),
                             End = new DateTime(2015,4,23,20,00,0),
                             Speaker = "Claudenir C. Andrade",
                             Title = "IOT Internet das Coisas Visual Studio e Windows embedded"
-                        },new Talk { 
+                        },new Talk {
                             Start = new DateTime(2015,4,23,20,0,0),
                             End = new DateTime(2015,4,23,20,15,0),
                             Title = "coffee-break",
                             Description = "Coffee-break e networking"
-                        },new Talk { 
+                        },new Talk {
                             Description = "Venha aprender como utilizar gestos, fala e expressões faciais para interagir com suas aplicações adicionando a elas um controle natural e intuitivo com Intel RealSense SDK",
                             Start = new DateTime(2015,4,23,20,30,0),
                             End = new DateTime(2015,4,23,21,15,0),
@@ -146,6 +146,38 @@ namespace DotNetFloripa.Data
                         }
                     }
                 },
+                new Event {
+                    Id = 4,
+                    Slug = "dotnetfloripa-2015-05",
+                    Description = "ASP.NET 5 e o novo mundo de desenvolvimento WEB",
+                    Start = new DateTime(2015,5,27,19,15,0),
+                    End = new DateTime(2014,5,27,21,15,0),
+                    EventickId = 16050,
+                    EventickUrl = "http://even.tc/dotnetfloripa-2015-05",
+                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
+                    Organizers = new[]{"André Carlucci", "Renato Haddad", "Luís Deschamps Rudge"},
+                    Title = "dotnet Floripa - Maio de 2015",
+                    Talks = new[]{
+                        new Talk {
+                            Description = "Venha conhecer o que há de novo no ASP.NET 5, os novos tipos e estruturas de projetos, as ferramentas de edição  de códigos, as plataformas de execução de uma aplicação ASP 5 (Windows, Mac Ox, Linux), os arquivos de configurações, a integração com injeção de dependências, os novos .NET Execution Environment (DNX) e .NET Version Manager (DNVM), como integrar com o Entity Framework 7, e ao final, como executar uma aplicação ASP.NET 5 no Pen-Drive.",
+                            Start = new DateTime(2015,5,27,19,15,0),
+                            End = new DateTime(2015,5,27,20,00,0),
+                            Speaker = "Renato Haddad",
+                            Title = "O que há de novo no ASP.NET 5?"
+                        },new Talk {
+                            Start = new DateTime(2015,5,27,20,0,0),
+                            End = new DateTime(2015,5,27,20,15,0),
+                            Title = "coffee-break",
+                            Description = "Coffee-break e networking"
+                        },new Talk {
+                            Description = "NodeJS, NPM, gulp, yeoman, bower, docker... É tanta coisa nova que é difícil saber por onde começar. Nessa palestra, vamos entender onde cada peça se encaixa e como tirar vantagem de tudo isso utilizando a plataforma .NET",
+                            Start = new DateTime(2015,5,27,20,30,0),
+                            End = new DateTime(2015,5,27,21,15,0),
+                            Speaker = "Luís Deschamps Rudge",
+                            Title = "Desenvolvimento WEB moderno com .NET"
+                        }
+                    }
+                }
             };
 
             Companies = new[] {
