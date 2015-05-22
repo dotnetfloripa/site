@@ -107,3 +107,4 @@ _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
 /DotNetFloripa/DotNetFloripa.Web/App_Readme
+.vs
