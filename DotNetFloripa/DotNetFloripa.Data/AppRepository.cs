@@ -178,6 +178,39 @@ namespace DotNetFloripa.Data
                         }
                     }
                 }
+                ,
+                new Event {
+                    Id = 5,
+                    Slug = "dotnetfloripa-2015-06",
+                    Description = "C# no mundo Android com Xamarin",
+                    Start = new DateTime(2015,6,16,19,00,0),
+                    End = new DateTime(2014,6,16,21,00,0),
+                    EventickId = 16050,
+                    EventickUrl = "http://www.meetup.com/pt/DotNetFloripa/events/223229354/",
+                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
+                    Organizers = new[]{"André Carlucci", "Renato Haddad", "Luís Deschamps Rudge"},
+                    Title = "dotnet Floripa - Junho de 2015",
+                    Talks = new[]{
+                        new Talk {
+                            Description = "Venha conhecer como fazer um app para android usando C# e Xamarin. Onde fazer download e os tipos de licensa. Vamos inserir um dado no banco de dados SQLite3, consultar e mandar para um nova tela (transporte de valores de uma tela a outra). Pegar este projeto feito em VS2013, abrir no Xamarin Studio para mostrar a compatibilidade entre os dois.",
+                            Start = new DateTime(2015,6,16,19,00,0),
+                            End = new DateTime(2015,6,16,20,00,0),
+                            Speaker = "Marco A. (Ghostman)",
+                            Title = "C# no mundo Android com Xamarin"
+                        },new Talk {
+                            Start = new DateTime(2015,5,27,20,0,0),
+                            End = new DateTime(2015,5,27,20,15,0),
+                            Title = "coffee-break",
+                            Description = "Coffee-break e networking"
+                        },new Talk {
+                            Description = "Discussão sobre desenvolvimento mobile. Acertos, erros e lições aprendidas",
+                            Start = new DateTime(2015,5,27,20,30,0),
+                            End = new DateTime(2015,5,27,21,15,0),
+                            Speaker = "Todos",
+                            Title = "Discussão sobre desenvolvimento mobile. Acertos, erros e lições aprendidas"
+                        }
+                    }
+                }
             };
 
             Companies = new[] {
