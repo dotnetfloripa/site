@@ -192,7 +192,7 @@ namespace DotNetFloripa.Data
                     Title = "dotnet Floripa - Junho de 2015",
                     Talks = new[]{
                         new Talk {
-                            Description = "Venha conhecer como fazer um app para android usando C# e Xamarin. Onde fazer download e os tipos de licensa. Vamos inserir um dado no banco de dados SQLite3, consultar e mandar para um nova tela (transporte de valores de uma tela a outra). Pegar este projeto feito em VS2013, abrir no Xamarin Studio para mostrar a compatibilidade entre os dois.",
+                            Description = "Venha conhecer como fazer um app para android usando C# e Xamarin. Onde fazer download e os tipos de licença. Vamos inserir um dado no banco de dados SQLite3, consultar e mandar para um nova tela (transporte de valores de uma tela a outra). Pegar este projeto feito em VS2013, abrir no Xamarin Studio para mostrar a compatibilidade entre os dois.",
                             Start = new DateTime(2015,6,16,19,00,0),
                             End = new DateTime(2015,6,16,20,00,0),
                             Speaker = "Marco A. (Ghostman)",
