@@ -211,6 +211,39 @@ namespace DotNetFloripa.Data
                         }
                     }
                 }
+                ,
+                new Event {
+                    Id = 6,
+                    Slug = "dotnetfloripa-2015-07",
+                    Description = "Mob Programming com C# 6, TDD e muito Refactoring!",
+                    Start = new DateTime(2015,7,16,19,00,0),
+                    End = new DateTime(2015,7,16,21,30,0),
+                    EventickId = 16050,
+                    EventickUrl = "http://www.meetup.com/DotNetFloripa/events/223834501/",
+                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
+                    Organizers = new[]{"André Carlucci", "Renato Haddad"},
+                    Title = "dotnet Floripa - Julho de 2015",
+                    Talks = new[]{
+                        new Talk {
+                            Description = "Novidades do C# 6",
+                            Start = new DateTime(2015,7,16,19,30,0),
+                            End = new DateTime(2015,7,16,19,50,0),
+                            Speaker = "Renato Haddad",
+                            Title = "Novidades do C# 6"
+                        },new Talk {
+                            Start = new DateTime(2015,7,16,19,50,0),
+                            End = new DateTime(2015,7,16,20,0,0),
+                            Title = "coffee-break",
+                            Description = "Coffee-break e networking"
+                        },new Talk {
+                            Description = "Mob Programming com a participação de todos",
+                            Start = new DateTime(2015,7,16,20,0,0),
+                            End = new DateTime(2015,7,16,21,30,0),
+                            Speaker = "André Carlucci e todos os presentes",
+                            Title = "Mob Programming com C# 6, TDD e muito Refactoring!"
+                        }
+                    }
+                }
             };
 
             Companies = new[] {
