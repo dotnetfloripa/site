@@ -254,7 +254,7 @@ namespace DotNetFloripa.Data
                     EventickUrl = "http://www.meetup.com/DotNetFloripa/events/224637303/",
                     ImageUrl = "http://i.imgur.com/2ls3CgF.png",
                     Organizers = new[]{"André Carlucci", "Renato Haddad"},
-                    Title = "dotnet Floripa - Julho de 2015",
+                    Title = "dotnet Floripa - Agosto de 2015",
                     Talks = new[]{
                         new Talk {
                             Description = "Nessa palestra será apresentado o fluxo de criação de um web app, indo da criação dos serviços em ASP.NET 5 até a interação com cliente utilizando Angular 2 e testes com Jasmine.",
