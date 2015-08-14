@@ -249,7 +249,7 @@ namespace DotNetFloripa.Data
                     Slug = "dotnetfloripa-2015-08",
                     Description = "ASP.NET 5 e Angular 2 com Testes de Unidade, no Linux e sem Visual Studio :)",
                     Start = new DateTime(2015,8,26,19,00,0),
-                    End = new DateTime(2015,8,26,21,30,0),
+                    End = new DateTime(2015,8,26,21,30,0), 
                     EventickId = 16050,
                     EventickUrl = "http://www.meetup.com/DotNetFloripa/events/224637303/",
                     ImageUrl = "http://i.imgur.com/2ls3CgF.png",
