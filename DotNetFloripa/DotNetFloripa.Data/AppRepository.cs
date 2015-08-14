@@ -243,6 +243,38 @@ namespace DotNetFloripa.Data
                             Title = "Mob Programming com C# 6, TDD e muito Refactoring!"
                         }
                     }
+                },
+                new Event {
+                    Id = 7,
+                    Slug = "dotnetfloripa-2015-08",
+                    Description = "ASP.NET 5 e Angular 2 com Testes de Unidade, no Linux e sem Visual Studio :)",
+                    Start = new DateTime(2015,8,26,19,00,0),
+                    End = new DateTime(2015,8,26,21,30,0),
+                    EventickId = 16050,
+                    EventickUrl = "http://www.meetup.com/DotNetFloripa/events/224637303/",
+                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
+                    Organizers = new[]{"André Carlucci", "Renato Haddad"},
+                    Title = "dotnet Floripa - Julho de 2015",
+                    Talks = new[]{
+                        new Talk {
+                            Description = "Nessa palestra será apresentado o fluxo de criação de um web app, indo da criação dos serviços em ASP.NET 5 até a interação com cliente utilizando Angular 2 e testes com Jasmine.",
+                            Start = new DateTime(2015,8,26,19,15,0),
+                            End = new DateTime(2015,8,26,20,15,0),
+                            Speaker = "Guilherme Waess e Gabriel Cardoso",
+                            Title = "ASP.NET 5 e Angular 2 com Testes de Unidade, no Linux e sem Visual Studio :)"
+                        },new Talk {
+                            Start = new DateTime(2015,8,26,20,15,0),
+                            End = new DateTime(2015,8,26,20,30,0),
+                            Title = "coffee-break",
+                            Description = "Coffee-break e networking"
+                        },new Talk {
+                            Description = "",
+                            Start = new DateTime(2015,8,26,20,30,0),
+                            End = new DateTime(2015,8,26,21,00,0),
+                            Speaker = "Todos",
+                            Title = "Discussão sobre Angular 2 e Asp.Net VNEXT"
+                        }
+                    }
                 }
             };
 
