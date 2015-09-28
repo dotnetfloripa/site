@@ -276,6 +276,39 @@ namespace DotNetFloripa.Data
                         }
                     }
                 }
+                ,
+                new Event {
+                    Id = 8,
+                    Slug = "dotnetfloripa-2015-09",
+                    Description = "Test Driven Development, como começar",
+                    Start = new DateTime(2015,9,30,19,00,0),
+                    End = new DateTime(2015,9,30,21,30,0), 
+                    EventickId = 16050,
+                    EventickUrl = "http://www.meetup.com/pt/DotNetFloripa/events/225674366",
+                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
+                    Organizers = new[]{"André Carlucci", "Renato Haddad", "Luis Rudge"},
+                    Title = "dotnet Floripa - Setembro de 2015",
+                    Talks = new[]{
+                        new Talk {
+                            Description = "Desenvolvimento orientado a testes é um processo evolucionário em que o desenvolvedor escreve primeiro os testes e depois o código de produção. É uma técnica de programação que visa acima de tudo qualidade e redução de bugs nas aplicações, fazendo o programador pensar primeiro do design da aplicação e depois em seu código funcional. Venha conhecer técnicas, frameworks e ver na prática como escrever testes de unidade tornando suas aplicações mais confiáveis e fáceis de manter.",
+                            Start = new DateTime(2015,9,30,19,15,0),
+                            End = new DateTime(2015,9,30,20,15,0),
+                            Speaker = "André Carlucci",
+                            Title = "Test Driven Development, como começar"
+                        },new Talk {
+                            Start = new DateTime(2015,9,30,20,15,0),
+                            End = new DateTime(2015,9,30,20,30,0),
+                            Title = "coffee-break",
+                            Description = "Coffee-break e networking"
+                        },new Talk {
+                            Description = "",
+                            Start = new DateTime(2015,9,30,20,30,0),
+                            End = new DateTime(2015,9,30,21,00,0),
+                            Speaker = "Todos",
+                            Title = "Discussão e troca de experiências sobre TDD"
+                        }
+                    }
+                }
             };
 
             Companies = new[] {
