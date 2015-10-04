@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\ie10mobile.css" />
+    <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\logo-medio.png" />
     <Content Include="Content\images\logo-pequeno.png" />
     <Content Include="packages.config" />
@@ -174,11 +176,7 @@
   </Target>
 -->
   <Target Name="AfterBuild">
-    <Copy Condition="'$(Configuration)' == 'Debug'" 
-          SourceFiles="$(SolutionDir)packages\Nancy.Viewengines.Razor.0.22.0\BuildProviders\Nancy.ViewEngines.Razor.BuildProviders.dll" 
-          DestinationFolder="$(OutDir)" />
-    <Copy Condition="'$(Configuration)' == 'Debug'" 
-          SourceFiles="$(SolutionDir)packages\Nancy.Viewengines.Razor.0.22.0\lib\net40\Nancy.ViewEngines.Razor.dll" 
-          DestinationFolder="$(OutDir)" />
+    <Copy Condition="'$(Configuration)' == 'Debug'" SourceFiles="$(SolutionDir)packages\Nancy.Viewengines.Razor.0.22.0\BuildProviders\Nancy.ViewEngines.Razor.BuildProviders.dll" DestinationFolder="$(OutDir)" />
+    <Copy Condition="'$(Configuration)' == 'Debug'" SourceFiles="$(SolutionDir)packages\Nancy.Viewengines.Razor.0.22.0\lib\net40\Nancy.ViewEngines.Razor.dll" DestinationFolder="$(OutDir)" />
   </Target>
 </Project>
