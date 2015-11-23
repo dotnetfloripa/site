@@ -37,10 +37,10 @@
                         <p>
                             @Html.Raw(e.Description)
                         </p>
-                        @if (!String.IsNullOrEmpty(e.EventickUrl))
+                        @if (!String.IsNullOrEmpty(e.ExternalUrl))
                         {
                             <div>
-                                <a href="@e.EventickUrl" class="btn btn-success btn-lg btn-large"><strong>Inscreva-se!</strong></a>
+                                <a href="@e.ExternalUrl" class="btn btn-success btn-lg btn-large"><strong>Inscreva-se!</strong></a>
                             </div>
                         }
                     </div>
