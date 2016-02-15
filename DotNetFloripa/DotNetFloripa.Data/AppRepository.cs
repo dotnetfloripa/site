@@ -416,6 +416,46 @@ namespace DotNetFloripa.Data
                             Title = "Microservices: é simples com Azure Service Fabric"
                         }
                     }
+                },
+                new Event
+                {
+                    Id = 10,
+                    Slug = "dotnetfloripa-2016-02",
+                    Description = "Conheça tudo sobre Application Insights",
+                    Start = new DateTime(2016, 02, 22, 19, 00, 0),
+                    End = new DateTime(2016, 02, 22, 21, 30, 0),
+                    ExternalUrl = "http://www.meetup.com/pt-BR/DotNetFloripa/events/228868744",
+                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
+                    Organizers = new[] {"André Carlucci", "Renato Haddad", "Luis Rudge"},
+                    Title = "dotnet Floripa - Fevereiro de 2016",
+                    Talks = new[]
+                    {
+                        new Talk
+                        {
+                            Description =
+                                "Através do Application Insights é possível detectar situações, auxiliar na solução de problemas para sempre melhorar a sua aplicação. Diagnósticos rápidos ajudam a resolver problemas durante o desenvolvimento e também em produção, principalmente como os usuários atuam no sistema. Atualmente suportado em iOS, Android, Windows Apps, J2EE, ASP.NET Web Applications e WCF. O SDK para JavaScript funciona em qualquer Web Page.",
+                            Start = new DateTime(2016, 02, 22, 19, 15, 0),
+                            End = new DateTime(2016, 02, 22, 20, 15, 0),
+                            Speaker = "Alex Tochetto",
+                            Title = "Application Insights com Microsoft Azure"
+                        },
+                        new Talk
+                        {
+                            Start = new DateTime(2016, 02, 22, 20, 15, 0),
+                            End = new DateTime(2016, 02, 22, 20, 30, 0),
+                            Title = "coffee-break",
+                            Description = "Coffee-break e networking"
+                        },
+                        new Talk
+                        {
+                            Description =
+                                "Em breve",
+                            Start = new DateTime(2016, 02, 22, 20, 30, 0),
+                            End = new DateTime(2016, 02, 22, 21, 30, 0),
+                            Speaker = "Em breve",
+                            Title = "Em breve"
+                        }
+                    }
                 }
             };
 
