@@ -467,8 +467,17 @@ namespace DotNetFloripa.Data
                     Description =
                         "A Way2 desenvolve softwares e serviços para telemedição e gestão de dados de medição de energia. Sediada em Florianópolis, Santa Catarina, a empresa possui uma equipe multidisciplinar especializada no atendimento às demandas de empresas do setor elétrico, como geradoras, transmissoras, distribuidoras e comercializadoras.",
                     Site = "http://way2.com.br",
-                    Address = "Rodovia SC 401, Km 04, Espaço Primavera Garden - Bloco B",
+                    Address = "Rodovia SC 401, 4150, CIA Acate sala 17 - Florianópolis - SC",
                     LogoUrl = "http://i.imgur.com/Slsbsu1.png"
+                },
+                new Company
+                {
+                    Name = "Paradigma",
+                    Description =
+                        "Em 16 anos de mercado a Paradigma especializou-se no desenvolvimento de soluções para relacionamento e negociação eletrônica. Presente em mais de 20 setores da economia, acumula experiência e conhecimento com um ciclo contínuo de inovação tecnológica e de processos, acompanhando a evolução das melhores práticas de mercado. A empresa oferece soluções consolidadas, confiáveis e com alta disponibilidade, para os segmentos de energia, indústria, serviços, setor público e mercado aberto BM&FBovespa.",
+                    Site = "http://www.paradigmabs.com.br",
+                    Address = "Rodovia José Carlos Daux (SC 401), 8.600, Sala 102 - Bloco 04 - Florianópolis - SC",
+                    LogoUrl = "http://i.imgur.com/iiqapkl.png"
                 }
             };
         }
