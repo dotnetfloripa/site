@@ -474,7 +474,7 @@ namespace DotNetFloripa.Data
                 {
                     Name = "Paradigma",
                     Description =
-                        "Em 16 anos de mercado a Paradigma especializou-se no desenvolvimento de soluções para relacionamento e negociação eletrônica. Presente em mais de 20 setores da economia, acumula experiência e conhecimento com um ciclo contínuo de inovação tecnológica e de processos, acompanhando a evolução das melhores práticas de mercado. A empresa oferece soluções consolidadas, confiáveis e com alta disponibilidade, para os segmentos de energia, indústria, serviços, setor público e mercado aberto BM&FBovespa.",
+                        "Em 18 anos de mercado a Paradigma especializou-se no desenvolvimento de soluções para relacionamento e negociação eletrônica. Presente em mais de 20 setores da economia, acumula experiência e conhecimento com um ciclo contínuo de inovação tecnológica e de processos, acompanhando a evolução das melhores práticas de mercado. A empresa oferece soluções consolidadas, confiáveis e com alta disponibilidade, para os segmentos de energia, indústria, serviços, setor público e mercado aberto.",
                     Site = "http://www.paradigmabs.com.br",
                     Address = "Rodovia José Carlos Daux (SC 401), 8.600, Sala 102 - Bloco 04 - Florianópolis - SC",
                     LogoUrl = "http://i.imgur.com/iiqapkl.png"
