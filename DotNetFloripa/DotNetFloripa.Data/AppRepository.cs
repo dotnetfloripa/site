@@ -449,11 +449,11 @@ namespace DotNetFloripa.Data
                         new Talk
                         {
                             Description =
-                                "Em breve",
+                                "E se a gente abandonasse a ideia de criar templates ou views e tudo fosse um componente? E se renderizar a aplicação sempre que os dados mudarem fosse sempre rápido? React é um jeito diferente de escrever as suas aplicações. Venha conhecer!",
                             Start = new DateTime(2016, 02, 22, 20, 30, 0),
                             End = new DateTime(2016, 02, 22, 21, 30, 0),
-                            Speaker = "Em breve",
-                            Title = "Em breve"
+                            Speaker = "Luís Rudge",
+                            Title = "Repensando o front-end com React"
                         }
                     }
                 }
