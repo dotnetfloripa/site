@@ -26,7 +26,7 @@
                         <strong>@e.Start.ToShortDateString()</strong> - <strong>@e.Start.ToShortTimeString()</strong> - <strong>@e.End.ToShortTimeString()</strong>
                     </h4>
                     <h2>
-                        <a href="@(String.IsNullOrEmpty(e.EventickUrl) ? "#" : e.EventickUrl)" target="_blank">@e.Title</a>
+                        <a href="@(String.IsNullOrEmpty(e.ExternalUrl) ? "#" : e.ExternalUrl)" target="_blank">@e.Title</a>
                     </h2>
                     <p class="visible-xs">
                         <strong>@e.Start.ToShortDateString()</strong> - <strong>@e.Start.ToShortTimeString()</strong> - <strong>@e.End.ToShortTimeString()</strong>
@@ -34,10 +34,10 @@
                     <p>
                         @Html.Raw(e.Description)
                     </p>
-                    @if (!String.IsNullOrEmpty(e.EventickUrl))
+                    @if (!String.IsNullOrEmpty(e.ExternalUrl))
                     {
                         <div>
-                            <a href="@e.EventickUrl" class="btn btn-success btn-lg btn-large"><strong>Inscreva-se!</strong></a>
+                            <a href="@e.ExternalUrl" class="btn btn-success btn-lg btn-large"><strong>Inscreva-se!</strong></a>
                         </div>
                     }
                 </div>
