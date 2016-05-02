@@ -489,9 +489,7 @@ namespace DotNetFloripa.Data
                         },
                         new Talk
                         {
-                            Description =
-                                "A plataforma .NET mudou muito nos últimos tempos e seu desenvolvimento rápido gerou muita confusão com seus acrônimos e partes móveis. Qual é o moniker que você tem que usar quando cria uma nova class library? Qual a diferença entre net46, dnx core, net core, netstandard, etc? Onde as Portable Class Libraries (ou PCLs) se encaixam nisso tudo? Elas ainda fazem sentido? 
-Venha tirar suas dúvidas sobre as mudanças em nossa plataforma e de quebra conhecer a visão da Microsoft sobre o futuro do ASP.NET.",
+                            Description = "A plataforma .NET mudou muito nos últimos tempos e seu desenvolvimento rápido gerou muita confusão com seus acrônimos e partes móveis. Qual é o moniker que você tem que usar quando cria uma nova class library? Qual a diferença entre net46, dnx core, net core, netstandard, etc? Onde as Portable Class Libraries (ou PCLs) se encaixam nisso tudo? Elas ainda fazem sentido? Venha tirar suas dúvidas sobre as mudanças em nossa plataforma e de quebra conhecer a visão da Microsoft sobre o futuro do ASP.NET.",
                             Start = new DateTime(2016, 04, 27, 20, 30, 0),
                             End = new DateTime(2016, 04, 27, 21, 30, 0),
                             Speaker = "André Carlucci",
