@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using DotNetFloripa.Model;
 using DotNetFloripa.Model.Interfaces;
@@ -454,6 +454,46 @@ namespace DotNetFloripa.Data
                             End = new DateTime(2016, 02, 22, 21, 30, 0),
                             Speaker = "Luís Rudge",
                             Title = "Repensando o front-end com React"
+                        }
+                    }
+                }
+                ,
+                new Event
+                {
+                    Id = 11,
+                    Slug = "dotnetfloripa-2016-04",
+                    Description = "BOT Framework e .NET Platform Standard",
+                    Start = new DateTime(2016, 04, 27, 19, 00, 0),
+                    End = new DateTime(2016, 04, 27, 21, 30, 0),
+                    ExternalUrl = "http://www.meetup.com/pt-BR/DotNetFloripa/events/230479437",
+                    ImageUrl = "http://i.imgur.com/2ls3CgF.png",
+                    Organizers = new[] {"André Carlucci", "Renato Haddad", "Luis Rudge"},
+                    Title = "dotnet Floripa - Abril de 2016",
+                    Talks = new[]
+                    {
+                        new Talk
+                        {
+                            Description =
+                                "A Microsoft através dos serviços cognitivos criou o BOT Framework, um SDK que permite criar aplicações usando linguagem natural para interagir com usuários através de conectores como Skype, SMS, Email, Slack, etc. Saiba como usar o LUIS (Language Understanding Intelligent Service) pra treinar com o Machine Learning as expressões que irão interagir com o usuário. Nesta palestra mostraremos como criar um projeto em C#, fazer deploy no Azure, usar o LUIS para treinar expressões e como conectar aos aplicativos.",
+                            Start = new DateTime(2016, 04, 27, 19, 15, 0),
+                            End = new DateTime(2016, 04, 27, 20, 15, 0),
+                            Speaker = "Renato Haddad",
+                            Title = "O que é o BOT Framework ?"
+                        },
+                        new Talk
+                        {
+                            Start = new DateTime(2016, 04, 27, 20, 15, 0),
+                            End = new DateTime(2016, 04, 27, 20, 30, 0),
+                            Title = "coffee-break",
+                            Description = "Coffee-break e networking"
+                        },
+                        new Talk
+                        {
+                            Description = "A plataforma .NET mudou muito nos últimos tempos e seu desenvolvimento rápido gerou muita confusão com seus acrônimos e partes móveis. Qual é o moniker que você tem que usar quando cria uma nova class library? Qual a diferença entre net46, dnx core, net core, netstandard, etc? Onde as Portable Class Libraries (ou PCLs) se encaixam nisso tudo? Elas ainda fazem sentido? Venha tirar suas dúvidas sobre as mudanças em nossa plataforma e de quebra conhecer a visão da Microsoft sobre o futuro do ASP.NET.",
+                            Start = new DateTime(2016, 04, 27, 20, 30, 0),
+                            End = new DateTime(2016, 04, 27, 21, 30, 0),
+                            Speaker = "André Carlucci",
+                            Title = ".NET Platform Standard Explained"
                         }
                     }
                 }
