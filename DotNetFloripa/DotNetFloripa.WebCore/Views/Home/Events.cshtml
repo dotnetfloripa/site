@@ -1,0 +1,46 @@
+﻿@model Event[]
+@{
+    ViewBag.Title = "Eventos de .NET em Floripa!";
+}
+@section seo {
+    <meta name="description" content="Eventos de .NET em Floripa">
+}
+@section facebook {
+    <meta property="og:title" content="Eventos de .NET em Floripa" />
+    <meta property="og:description" content="Eventos de .NET em florianópolis" />
+    <meta property="og:image" content="https://i.imgur.com/TenXCml.png" />
+}
+<div class="row">
+    @foreach (var e in Model)
+    {
+        <div class="col-md-12">
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-3" style="height:150px;">
+                        <img src="@e.ImageUrl" alt="logo" class="img-responsive img-centered" />
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="pull-right hidden-xs">
+                            <strong>@e.Start.ToString("dd/MM/yyyy")</strong> - <strong>@e.Start.ToString("t")</strong> - <strong>@e.End.ToString("t")</strong>
+                        </h4>
+                        <h2>
+                            <a href="~/evento/@e.Slug">@e.Title</a>
+                        </h2>
+                        <p class="visible-xs">
+                            <strong>@e.Start.ToString("dd/MM/yyyy")</strong> - <strong>@e.Start.ToString("t")</strong> - <strong>@e.End.ToString("t")</strong>
+                        </p>
+                        <p>
+                            @Html.Raw(e.Description)
+                        </p>
+                        @if (!String.IsNullOrEmpty(e.ExternalUrl))
+                        {
+                            <div>
+                                <a href="@e.ExternalUrl" class="btn btn-success btn-lg btn-large"><strong>Inscreva-se!</strong></a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
