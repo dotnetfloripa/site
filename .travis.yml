@@ -1,4 +1,11 @@
 language: csharp
 solution: ./DotNetFloripa/DotNetFloripa.sln
-mono:
-  - latest
+dist: trusty
+sudo: required
+dotnet: 1.0.0-preview2-003121
+mono: none
+env: DOTNETCORE=1
+script:
+  - cd DotNetFloripa/DotNetFloripa.WebCore
+  - dotnet restore
+  - dotnet build

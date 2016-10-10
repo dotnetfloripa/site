@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    @if (!IsSectionDefined("seo"))
+    { <meta name="description" content="Grupo de usuários .net de florianópolis"> }
+    else
+    { @RenderSection("seo") }
+    
+    <meta name="keywords" content="dotnetfloripa,dotnet,.net,palestra,evento,c#,csharp,floripa,florianopolis,silverlight,wpf,asp.net,asp.net mvc,windows phone,windows phone 7,xaml" />
+    <meta name="author" content="dotnetfloripa" />
+    <meta name="copyright" content="dotnetfloripa" />
+    @RenderSection("facebook", required: false)
+    
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/ie10mobile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/nprogress.css" />
+    <!--[if lt IE 9]>
+        <script src="~/js/html5shiv.js"></script>
+        <script src="~/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="~/js/analytics.js"></script>    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="logo-mobile">
+                <a href="~/">
+                    <img src="~/images/logo-pequeno.png" alt="logo" class="visible-xs" />
+                </a>
+            </div>
+            <ul class="nav nav-pills pull-right">
+                <li class="@(ViewBag.CurrentPage == "Home"? "active" : "")"><a href="~/">Home</a></li>
+                <li class="@(ViewBag.CurrentPage == "Sobre"? "active" : "")"><a href="~/sobre">Sobre</a></li>
+                <li class="@(ViewBag.CurrentPage == "Eventos"? "active" : "")"><a href="~/eventos">Eventos</a></li>
+                <li class="@(ViewBag.CurrentPage == "Vagas"? "active" : "")"><a href="~/vagas">Vagas</a></li>
+                <li class="@(ViewBag.CurrentPage == "Empresas"? "active" : "")"><a href="~/empresas">Empresas</a></li>
+            </ul>
+            <div id="logo">
+                &nbsp;
+                <a href="~/">
+                    <img src="~/images/logo-pequeno.png" alt="logo" class="hidden-xs" />
+                </a>
+            </div>
+        </div>
+        <div id="pjax-container">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script>
+        // Must be first. IE10 mobile viewport fix
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            var mq = "@@-ms-viewport{width:auto!important}";
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/nprogress.min.js"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+@RenderSection("scripts", required: false)
+</body>
+</html>
