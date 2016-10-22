@@ -6,5 +6,7 @@ namespace DotNetFloripa.ModelCore.Interfaces
         IQueryable<Event> GetEvents();
         Event GetEventBySlug(string slug);
         IQueryable<Company> GetCompanies();
+
+        IQueryable<Job> GetJobs();
     }
 }

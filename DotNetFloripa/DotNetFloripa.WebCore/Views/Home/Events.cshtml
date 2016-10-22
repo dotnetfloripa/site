@@ -11,6 +11,9 @@
     <meta property="og:image" content="https://i.imgur.com/TenXCml.png" />
 }
 <div class="row">
+    <div class="col-md-12" style="margin-bottom:20px">
+        <a href="https://www.meetup.com/pt-BR/DotNetFloripa/" class="btn btn-success btn-lg btn-large pull-right"><i class="glyphicon glyphicon-th-list" style="margin-right:5px"></i><strong>Veja todos</strong></a>
+    </div>
     @foreach (var e in Model)
     {
         <div class="col-md-12">
@@ -24,7 +27,7 @@
                             <strong>@e.Start.ToString("dd/MM/yyyy")</strong> - <strong>@e.Start.ToString("t")</strong> - <strong>@e.End.ToString("t")</strong>
                         </h4>
                         <h2>
-                            <a href="~/evento/@e.Slug">@e.Title</a>
+                            <a href="@(string.IsNullOrEmpty(e.Slug)? e.ExternalUrl : "~/evento/"+ e.Slug)">@e.Title</a>
                         </h2>
                         <p class="visible-xs">
                             <strong>@e.Start.ToString("dd/MM/yyyy")</strong> - <strong>@e.Start.ToString("t")</strong> - <strong>@e.End.ToString("t")</strong>
@@ -32,7 +35,7 @@
                         <p>
                             @Html.Raw(e.Description)
                         </p>
-                        @if (!String.IsNullOrEmpty(e.ExternalUrl))
+                        @if (!string.IsNullOrEmpty(e.ExternalUrl))
                         {
                             <div>
                                 <a href="@e.ExternalUrl" class="btn btn-success btn-lg btn-large"><strong>Inscreva-se!</strong></a>
